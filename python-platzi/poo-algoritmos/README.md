@@ -119,3 +119,10 @@ O(2 ** n) Exponencial
 ## Busqueda Lineal
 
 Busca en todos los elementos de manera secuencial
+
+## Busqueda Binaria
+
+Divide y conquista
+
+El problema se divide en 2 en cada iteracion
+
