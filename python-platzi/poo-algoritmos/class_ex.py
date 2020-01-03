@@ -1,17 +1,25 @@
-#!/urs/bin/python3
+#!/usr/bin/python3
 
 class Person:
-    # Class initialitation
+    # Class init
     def __init__(self, name, age):
         self.name= name
         self.age = age
     
     # Methods
-    def cheer(self, otherPerson):
-        return f'Hola {otherPerson.name}, me llamo {self.name}, tengo {self.age}.'
+    def my_name(self):
+    	return f'Hello, my name is {self.name}, and I have {self.age} years old'
 
-rafael = Person('Rafael', 21)
-martha = Person('Martha', 30)
+    def greeting(self, otherPerson):
+        return f'Hola {otherPerson.name}, me llamo {self.name}.'
 
-print(rafael.cheer(martha))
+def main():
+	# Class initialitation
+	rafael = Person('Rafael', 21)
+	martha = Person('Martha', 30)
 
+	print(rafael.my_name())
+	print(rafael.greeting(martha))
+
+if __name__ == '__main__':
+	main()
