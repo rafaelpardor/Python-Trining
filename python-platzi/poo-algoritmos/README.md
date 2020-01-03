@@ -92,7 +92,26 @@ Por que comparamos la eficiencia de un algoritmo
 
 Complejidad temporal vs Complejidad espacial
 
-### Cracion asintotico
+### Crecimiento asintotico
 
-No importan variaciones pequenias
+No importan variaciones pequenias, el crecimiento asintotico es cuando el input se acerca mas al infinito
 
+El enfoque se ecentra en lo que pasa conforme el tamanio del problema se acerca al infinito
+
+Siempre podemos pensar en los mejores de los casos, promedio y peor de los casos, nuestro algoritmo debe estar preparado para el peor de los casos.
+
+Big O notation, solo importa el input de mayor tamanio
+
+## Clases de complejidad algoritmica
+
+O(1) Constante - Nuestro tiempo de algoritmo no cambia, sin importar su input
+
+O(n) Lineal - El tiempo de algoritmo crece conforme el valor del input crece
+
+O(log n) Logaritmica - Nuestra funcion va a crecer de forma logaritmica conforme al input, primero va a crecer mucho y luego va a estabilizarse
+
+O(n log n) Log lineal - Va a crecer de forma logaritmica pero tambien con una constante
+
+O(n ** 2) Polineal
+
+O(2 ** n) Exponencial
