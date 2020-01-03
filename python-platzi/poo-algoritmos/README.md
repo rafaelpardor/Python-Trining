@@ -108,10 +108,14 @@ O(1) Constante - Nuestro tiempo de algoritmo no cambia, sin importar su input
 
 O(n) Lineal - El tiempo de algoritmo crece conforme el valor del input crece
 
-O(log n) Logaritmica - Nuestra funcion va a crecer de forma logaritmica conforme al input, primero va a crecer mucho y luego va a estabilizarse
+O(log n) Logaritmica - Nuestra funcion va a crecer de forma logaritmica conforme al input, primero va a crecer mucho y luego va a estabilizarse 
 
 O(n log n) Log lineal - Va a crecer de forma logaritmica pero tambien con una constante
 
 O(n ** 2) Polineal
 
 O(2 ** n) Exponencial
+
+## Busqueda Lineal
+
+Busca en todos los elementos de manera secuencial
