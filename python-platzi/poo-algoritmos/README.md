@@ -133,3 +133,7 @@ Este ordenamiento es un algoritmo que recorre repetidamente una lista que necesi
 ## Ordenamiento por insercion
 
 Este algoritmo es uno de los mas comunes que estudian los CP's. Es intuitivo y facil de implementar, pero es ineficiente para listas de gran tamanio. Una de las caracteristicas del ordenamiento por inercion es que ordena en "su lugar". Es decir, no requiere memoria adicional para realizar el ordenamiento ya que simplemente modifican valores en memoria.
+
+## Ordenamiento por mezcla
+
+Es un algoritmo de divide y conquista. Primero divide una lista en partes iguales hasta que quedan sublistas de 1 o 0 elementos. Luego las recombinan en forma ordenada.
