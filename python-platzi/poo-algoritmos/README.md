@@ -126,3 +126,7 @@ Divide y conquista
 
 El problema se divide en 2 en cada iteracion
 
+## Ordenamiento de burbuja
+
+Este ordenamiento es un algoritmo que recorre repetidamente una lista que necesita ordenarse. Compara elementos adyacentes y los intercambia si estan en el orden incorrecto. Este procedimiento se repite hasta que no se requieren mas intercambios, lo que indica que la lista se encuentra ordenada,
+
