@@ -130,3 +130,6 @@ El problema se divide en 2 en cada iteracion
 
 Este ordenamiento es un algoritmo que recorre repetidamente una lista que necesita ordenarse. Compara elementos adyacentes y los intercambia si estan en el orden incorrecto. Este procedimiento se repite hasta que no se requieren mas intercambios, lo que indica que la lista se encuentra ordenada,
 
+## Ordenamiento por insercion
+
+Este algoritmo es uno de los mas comunes que estudian los CP's. Es intuitivo y facil de implementar, pero es ineficiente para listas de gran tamanio. Una de las caracteristicas del ordenamiento por inercion es que ordena en "su lugar". Es decir, no requiere memoria adicional para realizar el ordenamiento ya que simplemente modifican valores en memoria.
