@@ -72,7 +72,7 @@ def serch_client(client_name):
         else:
             return True
 
-def _get_client_field(field_name, message = 'What is the client {}?'):
+def _get_client_field(field_name, message = 'What is the client {}?: '):
     field = None
 
     while not field:
@@ -90,47 +90,49 @@ def _get_client_from_user():
 
     return client
 
-def _print_welcome():
-    print('Welcome to Platzi-Sells')
-    print('*' * 50)
-    print('What would you like to do today?')
+def main():
+    print('Welcome to Platzi-Store')
+    print('*' * 30)
+    print('What would you like to do?')
     print('[C]-Create client')
     print('[L]-List clients')
     print('[U]-Update client')
     print('[D]-Delete client')
     print('[S]-Search client')
+    print('\nEnter a letter command')
 
 
 if __name__ == '__main__':
     __initialize_clients_from_storage()
-    _print_welcome()
+    main()
 
-    command = input()
-    command = command.upper()
+    command = input().upper()
 
-    if command == 'C': # Create
+
+    if command == 'C': # Create client
         client = _get_client_from_user()
-
         create_client(client)
+
     elif command == 'L': # List clients
         list_clients()
-    elif command == 'U': # Update
+
+    elif command == 'U': # Update client
         client_id = int(_get_client_field('id'))
         updated_client = _get_client_from_user()
-
         update_client(client_id, updated_client)
+
     elif command == 'D': # Delete
         client_id = int(_get_client_field('id'))
-
         delete_client(client_id)
+
     elif command == 'S': # Search
         client_name = _get_client_field('name')
         found = serch_client(client_name)
 
         if found:
-            print('The client is in the clients list')
+            print(f'The client {client_name} is in the clients list')
         else:
-            print('The client {} is not in the list'.format(client_name))
+            print(f'The client {client_name} is not in the list')
     else:
         print('Invalid command')
     
