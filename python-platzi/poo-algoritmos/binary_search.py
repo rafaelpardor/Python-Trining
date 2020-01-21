@@ -1,9 +1,10 @@
-#!urs/bin/python3
+#!usr/bin/python3
 
 import random
 
 def busqueda_binaria(lista, start, final, objetivo):
 	print(f'Buscando {objetivo} entre {lista[start]} y {lista[final-1]}')
+	
 	count = 0
 
 	if start > final:
