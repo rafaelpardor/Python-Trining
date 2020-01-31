@@ -69,3 +69,21 @@ Sometimes in the software development team, should have some type coding style, 
 Adding to that, the documentation of a piece of code, or software is very importat, if is not obligatory. All though, we have code conventios, having some comments explaining the code will save a lot of work.
 
 ### 2.2.4 Testing and Debugging
+
+Testing is the process of experimentally checking the correctness of a program, while debugging is the process os tracking the execution of a program and discovering the errors in it.
+
+#### Testing
+
+A cereful testing plan is an essential part of writing a program. While verifying the correctness of a program over all possible inputs is usually infeasible, we should aim at executing the program on a representative subset of inputs. Programs often tend to fail on special cases of the input. Such cases need to be carefully indentified and tested. In addition to special inputs to the program, we should also consider special conditions for the structures used by the program. For example, if we use a Python list to store data, we should make sure that boundary cases, such as inserting or removing at the beginning or end of the list, are properly handled.
+
+The dependecies among the classes and functions of a program induce a hierarchy. Namely, a component A is above a component B in the hierarchy if A depends upon B, such as when function A is above a component B in the hierarchy if A depends upon B, such as when function A calls function B, or function A relies on a parameter that is an instance of class B. There are two main testing strategies, top-down and bootom-up, which differ in the order in which components are tested.
+
+Top-down testing proceeds from the top the bottom of the program hierarchy. It is typically used in conjuction with stubbing, a boot-strapping technique that replaces a lower-level component with a stub, a replacement for the componet that simulates the functionality of the original. For example, if function A calls function B to get the first line of a file, when testing A we can replace B with a stub that returns a fices string.
+
+Bottom-up testing proceeds from lower-level components to higher-level components. For example, bottom-level functions, which do not invoke other functions, are tested first, followed by functions that call only bottom-level functions, and so on. Similarly a class that does not depend upon any other classes can be tested before another class that depends on the former. This form of testing is usually described as unit testing, as the functionality of a specific component is tested in isolation of the larger software project. If used properly, this strategy better isolates the cause of errors to the component being tested, as lower-level components upon which it relies should have already been thoroughly tested.
+
+#### Debugging
+
+The simplest debugging technique consist of using print statements to track the values of variables during the execution of the program. A problem with this approach is that eventually the print statements need to be removed or commented out, so they are not executed when the software is finally released.
+
+A better approach is to run the program within a debugger, which is a specialized eviroment for controlling and monitoring the execution of a program. The basic functionality provided by a debugger is the insertion of breakpoints within the code. When the program is executed within the debugger, it stops at each breakpoint. While the program is stopped, the current value of variables can be inspected.
