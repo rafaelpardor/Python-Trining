@@ -60,7 +60,7 @@ UML (Unified Modeling Language) diagrams to express the organization of a progra
 
 Pseudo-code is not a computer program, but is more structured than usual prose. It is a mixture of natural language and high-level programming constructs that describe the main ideas behind a generic implementation of a data structure or algorithm.
 
-### 2.2.3 Coding style and Documentation
+### 2.2.3 - Coding style and Documentation
 
 Good programmers should therefore be mindful of their coding style, and develop a style that communicates the important aspects of a program’s design for both humans and computers.
 
@@ -68,7 +68,7 @@ Sometimes in the software development team, should have some type coding style, 
 
 Adding to that, the documentation of a piece of code, or software is very importat, if is not obligatory. All though, we have code conventios, having some comments explaining the code will save a lot of work.
 
-### 2.2.4 Testing and Debugging
+### 2.2.4 - Testing and Debugging
 
 Testing is the process of experimentally checking the correctness of a program, while debugging is the process os tracking the execution of a program and discovering the errors in it.
 
@@ -87,3 +87,5 @@ Bottom-up testing proceeds from lower-level components to higher-level component
 The simplest debugging technique consist of using print statements to track the values of variables during the execution of the program. A problem with this approach is that eventually the print statements need to be removed or commented out, so they are not executed when the software is finally released.
 
 A better approach is to run the program within a debugger, which is a specialized eviroment for controlling and monitoring the execution of a program. The basic functionality provided by a debugger is the insertion of breakpoints within the code. When the program is executed within the debugger, it stops at each breakpoint. While the program is stopped, the current value of variables can be inspected.
+
+
