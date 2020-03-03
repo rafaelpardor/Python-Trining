@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+# !/usr/bin/python3
 
 # We need to unpacl N elements from an iterable, but the iterable has to many values
 print("""
