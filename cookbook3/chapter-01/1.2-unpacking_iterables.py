@@ -1,11 +1,12 @@
-# !/usr/bin/python3
+#!/usr/bin/python3
 
 # We need to unpacl N elements from an iterable, but the iterable has to many values
 print("""
 Python 'star expressions' can be used to recollect too many values to unpack.
-        """)
+Does not mather the length.
+    """)
 
-record = ('Rafael', 'rafael@example.com','312312312','31321312312', 20)
+record = ('Rafael', 'rafael@example.com','312312312','31321312312', 21)
 name, email, *phone_numbers, age= record
 
 # The phone_numbers variable will always be a list, regardless of how many phone numbers are unpacked
