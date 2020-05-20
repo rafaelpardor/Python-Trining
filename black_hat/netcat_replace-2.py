@@ -39,6 +39,7 @@ def main():
   global UPLOAD_DEST
   global TARGET
 
+  # if theres no arguments, usage()
   if not len(sys.argv[1:]):
     usage()
 
@@ -68,8 +69,57 @@ def main():
     else:
       assert False, "ungandled option"
 
+  # are we going to listen or just send data from stdin?
   if not LISTEN and len(TARGET) and PORT > 0:
+    # read in the buffer from the command line
+    # this whill block, so send CTRL-D if not sending input
+    # to stdin
     buffer = sys.stdin.read()
+
+    # send data off
     client_sender(buffer)
+
+  # we are going to listen and potentially
+  # upload things, execute commands, and drop a shell back
+  # depending on our command line options abovr
+  if LISTEN:
+    server_loop()
+
+
+def client_sender(buffer):
+  clinet = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+  try:
+    # connect to our target host
+    client.connect((target, port))
+
+    if len(buffer):
+      client.send(buffer)
+    while True:
+      recv_len = 1
+      response = ""
+
+      while recv_len:
+        data = client.recv(4096)
+        recv_len = len(data)
+        response += data
+
+        if recv_len < 4096:
+          break
+
+      print response,
+
+      # wait for mor input
+      buffer = raw_input("")
+      buffer += "\n"
+
+      # send it off
+      client.send(buffer)
+
+  except:
+    print "[*] Exception Exiting"
+
+    # tear down the connection
+    client.close()
+
 
 main()
