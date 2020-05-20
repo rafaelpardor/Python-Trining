@@ -22,7 +22,11 @@ Usage: netcat_replace.py -t target_host -p port
                             incoming connection
 
 -e --execute-file_to_run  - execute the given file upon
-xd
+
+-c --command              - Initialize a command shell
+
+-u --upload               - upon receiving connection upload a
+                            file and write destination
   """
   sys.exit(0)
 
@@ -69,12 +73,3 @@ def main():
     client_sender(buffer)
 
 main()
-
-
-
-
-
-
-
-
-
