@@ -1,5 +1,5 @@
-import sys
 import csv
+import sys
 import os
 
 CLIENT_TABLE = '.clients.csv'
@@ -135,5 +135,5 @@ if __name__ == '__main__':
             print(f'The client {client_name} is not in the list')
     else:
         print('Invalid command')
-    
+
     _save_client_to_storage()
