@@ -16,29 +16,29 @@ Maquina de hacer hilos
 
 [Motor analitico](https://es.wikipedia.org/wiki/M%C3%A1quina_anal%C3%ADtica)
 
-Las maquinas nos han ayudado a hacer calculos
+Las maquinas nos han ayudado a hacer calculos que a los humanos les tomaria mucho tiempo en hacer
 
-Alan Turing - Primera PC en la WWII
+Alan Turing genio de la computacion y precurso de la IA hace la Primera PC en la WWII
 
-Richard Feminan - Computadoras cuanticas
+[Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman) - Computadoras cuanticas
 
 ### Computo y computadora
 
 - Las computadoras hacen dos cosas: hacen calculos y recuerdan el resultado de dichos calculos
 
-- Por la mayotia de las historia humana, estabamos limitados por la velocidad del cerebro y la mano
+- Por la mayotia de las historia humana, estabamos limitados por la velocidad del cerebro y la mano.
 
 - Aun con las computadoras modernas existen problemas que no podemos resolver.
 
 ## Introduccion a los lenguajes de programacion
 
-Como dar instrucciones
+La function de los lenguajes de programacion de darle instrucciones a la computadoras.
 
-- Conocimiento declarativo vs imperativo
+- Existe el conocimiento declarativo e imperativo
 
-  [Declarativo](https://es.wikipedia.org/wiki/Conocimiento_declarativo): nos dice que tipo de relaciones existen entre variables y formulas
+    - [Declarativo](https://es.wikipedia.org/wiki/Conocimiento_declarativo): nos dice que tipo de relaciones existen entre variables y formulas
 
-  imperativo: Nos dice como llegar a un resultado, dentro del conocimeito imperativo estan los algoritmos
+    - Imperativo: Nos dice como llegar a un resultado, dentro del conocimeito imperativo estan los algoritmos
 
 - Algoritmo: Es una lista finita de instrucciones que describen un computo, que cuando se ejecuta con ciertos
 inputs que ejecuta pasos intermedios para llegar a un resultado
@@ -179,7 +179,6 @@ else:
 ## Excepciones y control de flujo
 
 ## Afiramciones
-
 
 
 
