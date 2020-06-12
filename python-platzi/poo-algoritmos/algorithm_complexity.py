@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import time
 
 def factorial(n):
@@ -16,15 +18,15 @@ def factorial_r(n):
     return n * factorial(n-1)
 
 if __name__ == "__main__":
-    n = 1000
+    n = 10000
 
-    start = time.time()
+    start_1 = time.time()
     factorial(n)
-    final = time.time()
-    print(start-final)
+    final_1 = time.time()
+    print(final_1-start_1)
 
 
-    start = time.time()
+    start_2 = time.time()
     factorial(n)
-    final = time.time()
-    print(start-final)
+    final_2 = time.time()
+    print(final_2-start_2)

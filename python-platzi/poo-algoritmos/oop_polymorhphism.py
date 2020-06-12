@@ -4,11 +4,13 @@ class Person:
     def __init__(self, name):
         self.name = name
 
+
     def forward(self):
         print(f'{self.name} is walking')
 
-    def secret_person(self):
+    def _secret_person(self):
         print('Hello, this method is secret')
+
 
 class Biker(Person):
     def __init__(self, name):
@@ -21,11 +23,11 @@ class Biker(Person):
 def main():
     person = Person('Rafael')
     person.forward()
-    person.secret_person()
+    person._secret_person()
 
     biker = Biker('Juan')
     biker.forward()
-    biker.secret_person()
+    biker._secret_person()
 
 if __name__ == "__main__":
     main()

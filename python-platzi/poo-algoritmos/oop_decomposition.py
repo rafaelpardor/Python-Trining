@@ -7,8 +7,8 @@ class Car:
         self.doors = doors
         self.color = color
         self.state = 'resting'
-        self.engine = Engine(cylinder=4)
-    
+        self._engine = Engine(cylinders=4)
+
     def speeding(self, speed='despacio'):
         if speed == 'fast':
             self._engine.pump_gas(10)
@@ -26,3 +26,6 @@ class Engine:
     def pump_gas(self, ammount):
         pass
 
+if __name__ == "__main__":
+    car_1=Car('MODEL', 'BRAND', 'DOORS', 'COLOR')
+    print(car_1.speeding())

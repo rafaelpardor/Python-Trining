@@ -1,14 +1,14 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 
 import random
 
-def busqueda_lineal(lista, objetivo):
+def lineal_search(numbs, obj):
 	match = False
 	count = 0
 
-	for element in lista:
+	for element in numbs: #O(n)
 		count+=1
-		if element == objetivo:
+		if element == objective:
 			match = True
 			break
 
@@ -16,11 +16,11 @@ def busqueda_lineal(lista, objetivo):
 	return match
 
 if __name__ == '__main__':
-	tamano_lista = int(input('De que tamano es la lista? '))
-	objetivo = int(input('Que numero quieres encontrar '))
+	len_list = int(input('Length of your list?\n-> '))
+	objective = int(input('What number you want to find?\n->'))
 
-	lista = [random.randint(0, 100) for i in range(tamano_lista)]
+	nums = [random.randint(0, 100) for i in range(len_list)]
 
-	matched = busqueda_lineal(lista, objetivo)
-	print(lista)
-	print(f'El elemento {objetivo} {"esta en la lista" if matched else "no esta en la lista"}')
+	matched = lineal_search(nums, objective)
+	print(nums)
+	print(f'El elemento {objective} {"esta en la lista" if matched else "no esta en la lista"}')

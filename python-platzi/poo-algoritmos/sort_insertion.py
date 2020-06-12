@@ -2,18 +2,18 @@
 
 import random
 
-def insertion_sort(lista):
-	for index in range (1, len(lista)):
-		actual_value = lista[index]
+def insertion_sort(num_list):
+	for index in range (1, len(num_list)):
+		actual_value = num_list[index]
 		actual_position = index
 
-		while actual_position > 0 and lista[actual_position - 1] > actual_value:
-			lista[actual_position] = lista[actual_position - 1]
+		while actual_position > 0 and num_list[actual_position - 1] > actual_value:
+			num_list[actual_position] = num_list[actual_position - 1]
 			actual_position -= 1
 
-		lista[actual_position] = actual_value
+		num_list[actual_position] = actual_value
 
-	return lista
+	return num_list
 
 if __name__ == '__main__':
 	tamano_lista = int(input('De que tamano es la lista? '))
